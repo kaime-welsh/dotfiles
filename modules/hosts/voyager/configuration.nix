@@ -12,6 +12,7 @@
 			self.nixosModules.voyagerHardware
 				self.nixosModules.niri
 				self.nixosModules.gaming
+				self.nixosModules.zen-browser
 		];
 
 		boot.loader.systemd-boot.enable = true;

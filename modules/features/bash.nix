@@ -1,7 +1,7 @@
 { self, inputs, ... }:
 {
   flake.homeModules.bash =
-    { pkgs, ... }:
+    { pkgs, config, ... }:
     {
       home.sessionVariables = {
         EDITOR = "hx";
@@ -25,7 +25,7 @@
       programs.bash = {
         enable = true;
         shellAliases = {
-          rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles#uplink";
+          rebuild = "sudo nixos-rebuild switch --flake ~/dotfiles#${builtins.getEnv "HOSTNAME"}";
           clean = "sudo nix-collect-garbage -d";
           z = "zellij";
           lg = "lazygit";

@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-	flake.nixosModules.home-manager = { pkgs, ... }:
+	flake.nixosModules.home-manager = { pkgs, config, ... }:
 	{
 		imports = [
 			inputs.home-manager.nixosModules.default
@@ -14,6 +14,7 @@
 					self.homeModules.bash
 					self.homeModules.git
 					self.homeModules.zellij
+					self.homeModules.yazi
 					self.homeModules.helix
 					self.homeModules.librewolf
 					self.homeModules.niri
