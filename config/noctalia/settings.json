@@ -751,7 +751,7 @@
     },
     "wallpaper": {
         "automationEnabled": false,
-        "directory": "/home/sysop/Pictures/Wallpapers",
+        "directory": "/home/sysop/Wallpapers",
         "enableMultiMonitorDirectories": false,
         "enabled": true,
         "favorites": [
