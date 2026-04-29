@@ -1,0 +1,14 @@
+default_mode "locked"
+show_startup_tips false
+
+keybinds {
+    shared {
+        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
+        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
+        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt m" { ToggleFloatingPanes; }
+        bind "Alt t" { NewTab; }
+        bind "Alt p" { NewPane; }
+    }
+}
