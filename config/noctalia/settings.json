@@ -18,6 +18,9 @@
         "ignoreMouseInput": false,
         "overviewLayer": true,
         "pinnedApps": [
+            "zen",
+            "steam",
+            "kitty"
         ],
         "position": "top_left",
         "screenshotAnnotationTool": "",
@@ -79,6 +82,47 @@
         "widgets": {
             "center": [
                 {
+                    "id": "plugin:niri-auto-tile"
+                },
+                {
+                    "id": "plugin:weekly-calendar"
+                },
+                {
+                    "clockColor": "none",
+                    "customFont": "",
+                    "formatHorizontal": "h:mm AP | ddd, MMM dd",
+                    "formatVertical": "HH mm - dd MM",
+                    "id": "Clock",
+                    "tooltipFormat": "HH:mm ddd, MMM dd",
+                    "useCustomFont": false
+                },
+                {
+                    "colorizeIcons": false,
+                    "hideMode": "hidden",
+                    "id": "ActiveWindow",
+                    "maxWidth": 145,
+                    "scrollingMode": "hover",
+                    "showIcon": true,
+                    "showText": true,
+                    "textColor": "none",
+                    "useFixedWidth": false
+                },
+                {
+                    "id": "plugin:pomodoro"
+                }
+            ],
+            "left": [
+                {
+                    "colorizeSystemIcon": "none",
+                    "colorizeSystemText": "none",
+                    "customIconPath": "",
+                    "enableColorization": false,
+                    "icon": "rocket",
+                    "iconColor": "none",
+                    "id": "Launcher",
+                    "useDistroLogo": false
+                },
+                {
                     "characterCount": 2,
                     "colorizeIcons": false,
                     "emptyColor": "secondary",
@@ -98,27 +142,9 @@
                     "showBadge": true,
                     "showLabelsOnlyWhenOccupied": true,
                     "unfocusedIconsOpacity": 1
-                }
-            ],
-            "left": [
-                {
-                    "colorizeSystemIcon": "none",
-                    "colorizeSystemText": "none",
-                    "customIconPath": "",
-                    "enableColorization": false,
-                    "icon": "rocket",
-                    "iconColor": "none",
-                    "id": "Launcher",
-                    "useDistroLogo": false
                 },
                 {
-                    "clockColor": "none",
-                    "customFont": "",
-                    "formatHorizontal": "HH:mm ddd, MMM dd",
-                    "formatVertical": "HH mm - dd MM",
-                    "id": "Clock",
-                    "tooltipFormat": "HH:mm ddd, MMM dd",
-                    "useCustomFont": false
+                    "id": "plugin:keybind-cheatsheet"
                 },
                 {
                     "compactMode": true,
@@ -143,15 +169,7 @@
                     "usePadding": false
                 },
                 {
-                    "colorizeIcons": false,
-                    "hideMode": "hidden",
-                    "id": "ActiveWindow",
-                    "maxWidth": 145,
-                    "scrollingMode": "hover",
-                    "showIcon": true,
-                    "showText": true,
-                    "textColor": "none",
-                    "useFixedWidth": false
+                    "id": "plugin:tailscale"
                 },
                 {
                     "compactMode": false,
@@ -168,13 +186,37 @@
                     "textColor": "none",
                     "useFixedWidth": false,
                     "visualizerType": "linear"
-                }
-            ],
-            "right": [
+                },
+                {
+                    "id": "plugin:music-search"
+                },
                 {
                     "iconColor": "none",
                     "id": "KeepAwake",
                     "textColor": "none"
+                },
+                {
+                    "id": "plugin:slowbongo"
+                },
+                {
+                    "id": "plugin:tamagotchi"
+                }
+            ],
+            "right": [
+                {
+                    "id": "plugin:todo"
+                },
+                {
+                    "id": "plugin:clipper"
+                },
+                {
+                    "id": "plugin:wallcards"
+                },
+                {
+                    "id": "plugin:niri-animation-picker"
+                },
+                {
+                    "id": "plugin:ntfy-notifications"
                 },
                 {
                     "blacklist": [
@@ -186,6 +228,9 @@
                     "id": "Tray",
                     "pinned": [
                     ]
+                },
+                {
+                    "id": "plugin:usb-drive-manager"
                 },
                 {
                     "hideWhenZero": false,
@@ -600,7 +645,7 @@
         "overlayLayer": true
     },
     "plugins": {
-        "autoUpdate": false,
+        "autoUpdate": true,
         "notifyUpdates": true
     },
     "sessionMenu": {
