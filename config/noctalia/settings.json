@@ -82,6 +82,16 @@
         "widgets": {
             "center": [
                 {
+                    "defaultSettings": {
+                        "debounceMs": 300,
+                        "enabled": true,
+                        "language": "auto",
+                        "maxEventsPerSecond": 20,
+                        "maxVisible": 4,
+                        "perWorkspace": false,
+                        "workspaceMaxVisible": {
+                        }
+                    },
                     "id": "plugin:niri-auto-tile"
                 },
                 {
@@ -108,6 +118,14 @@
                     "useFixedWidth": false
                 },
                 {
+                    "defaultSettings": {
+                        "autoStartBreaks": false,
+                        "autoStartWork": false,
+                        "longBreakDuration": 15,
+                        "sessionsBeforeLongBreak": 4,
+                        "shortBreakDuration": 5,
+                        "workDuration": 25
+                    },
                     "id": "plugin:pomodoro"
                 }
             ],
@@ -144,6 +162,18 @@
                     "unfocusedIconsOpacity": 1
                 },
                 {
+                    "defaultSettings": {
+                        "autoHeight": true,
+                        "cheatsheetData": [
+                        ],
+                        "columnCount": 3,
+                        "detectedCompositor": "",
+                        "hyprlandConfigPath": "~/.config/hypr/hyprland.conf",
+                        "modKeyVariable": "$mod",
+                        "niriConfigPath": "~/.config/niri/config.kdl",
+                        "windowHeight": 0,
+                        "windowWidth": 1400
+                    },
                     "id": "plugin:keybind-cheatsheet"
                 },
                 {
@@ -169,6 +199,22 @@
                     "usePadding": false
                 },
                 {
+                    "defaultSettings": {
+                        "compactMode": false,
+                        "defaultPeerAction": "copy-ip",
+                        "hideDisconnected": false,
+                        "hideMullvadExitNodes": true,
+                        "loginServer": "",
+                        "pingCount": 5,
+                        "refreshInterval": 5000,
+                        "showIpAddress": true,
+                        "showPeerCount": true,
+                        "sshUsername": "",
+                        "taildropDownloadDir": "~/Downloads",
+                        "taildropEnabled": true,
+                        "taildropReceiveMode": "operator",
+                        "terminalCommand": ""
+                    },
                     "id": "plugin:tailscale"
                 },
                 {
@@ -188,6 +234,42 @@
                     "visualizerType": "linear"
                 },
                 {
+                    "commandPrefix": "music-search",
+                    "defaultSettings": {
+                        "autoSaveMp3AfterPlayback": false,
+                        "defaultPanelLibrarySection": "tracks",
+                        "defaultPanelTab": "search",
+                        "panelDensity": "balanced",
+                        "previewMetadataMode": "always",
+                        "previewPaneWidth": 0,
+                        "previewThumbnailSize": "comfortable",
+                        "showAlbumMetadata": true,
+                        "showBarHoverTrackTitle": true,
+                        "showDurationMetadata": true,
+                        "showHomeArtists": true,
+                        "showHomePlaylists": true,
+                        "showHomeRecent": true,
+                        "showHomeTags": true,
+                        "showHomeTop": true,
+                        "showPanelHeader": true,
+                        "showPanelNowPlaying": true,
+                        "showPanelPlaybackProgress": true,
+                        "showPanelPreview": true,
+                        "showPanelProviderChips": true,
+                        "showPanelQueueControls": true,
+                        "showPanelRecentTracks": true,
+                        "showPanelSearchHelper": true,
+                        "showPanelSpeedControls": true,
+                        "showPanelStatusBanner": true,
+                        "showPanelUrlActions": true,
+                        "showPlayStatsMetadata": true,
+                        "showPreviewChips": true,
+                        "showRatingMetadata": true,
+                        "showStatusMetadata": true,
+                        "showTagMetadata": true,
+                        "showUploaderMetadata": true,
+                        "ytPlayerClient": "android"
+                    },
                     "id": "plugin:music-search"
                 },
                 {
@@ -196,26 +278,135 @@
                     "textColor": "none"
                 },
                 {
+                    "defaultSettings": {
+                        "catColor": "default",
+                        "catOffsetY": 0,
+                        "catSize": 1,
+                        "idleTimeout": 150,
+                        "raveMode": false,
+                        "tappyMode": false,
+                        "useMprisFilter": false,
+                        "waitingTimeout": 30000
+                    },
                     "id": "plugin:slowbongo"
                 },
                 {
+                    "defaultSettings": {
+                        "cleanliness": 100,
+                        "difficulty": 50,
+                        "energy": 100,
+                        "happiness": 100,
+                        "hunger": 100,
+                        "showDebug": false,
+                        "showPercentage": false,
+                        "volume": 0.5
+                    },
                     "id": "plugin:tamagotchi"
                 }
             ],
             "right": [
                 {
+                    "defaultSettings": {
+                        "completedCount": 0,
+                        "count": 0,
+                        "current_page_id": 0,
+                        "exportEmptySections": false,
+                        "exportFormat": "markdown",
+                        "exportPath": "~/Documents",
+                        "isExpanded": false,
+                        "pages": [
+                            {
+                                "id": 0,
+                                "name": "General"
+                            }
+                        ],
+                        "priorityColors": {
+                            "high": "#f44336",
+                            "low": "#9e9e9e",
+                            "medium": "#2196f3"
+                        },
+                        "showBackground": true,
+                        "showCompleted": true,
+                        "todos": [
+                        ],
+                        "useCustomColors": false
+                    },
                     "id": "plugin:todo"
                 },
                 {
+                    "defaultSettings": {
+                        "autoPaste": false,
+                        "autoPasteDelay": 300,
+                        "autoPasteOnRightClick": false,
+                        "cardColors": {
+                        },
+                        "customColors": {
+                        },
+                        "enableTodoIntegration": false,
+                        "fullscreenMode": false,
+                        "hidePanelBackground": false,
+                        "notecardsEnabled": true,
+                        "panelHeight": 0,
+                        "panelWidth": 1450,
+                        "pincardsEnabled": true,
+                        "showCloseButton": true
+                    },
                     "id": "plugin:clipper"
                 },
                 {
+                    "defaultSettings": {
+                        "animation_duration": 750,
+                        "background_color": null,
+                        "background_opacity": null,
+                        "card_height": 500,
+                        "card_radius": 10,
+                        "card_spacing": 8,
+                        "card_strip_width": 80,
+                        "cards_shown": 11,
+                        "filter_images": [
+                            "png",
+                            "jpg",
+                            "jpeg"
+                        ],
+                        "filter_videos": [
+                            "mp4",
+                            "mkv",
+                            "avi",
+                            "mov"
+                        ],
+                        "live_preview": false,
+                        "selected_filter": "images",
+                        "shear_factor": -0.25,
+                        "show_image_name": true,
+                        "show_image_type": true,
+                        "show_top_bar": true,
+                        "top_bar_height": 35,
+                        "top_bar_radius": 10
+                    },
                     "id": "plugin:wallcards"
                 },
                 {
+                    "defaultSettings": {
+                        "animationsFolder": "~/.config/niri/animations",
+                        "iconColor": "none",
+                        "targetFile": "~/.config/niri/config.kdl"
+                    },
                     "id": "plugin:niri-animation-picker"
                 },
                 {
+                    "defaultSettings": {
+                        "authMethod": "none",
+                        "authPassword": "",
+                        "authToken": "",
+                        "authUsername": "",
+                        "enableToasts": true,
+                        "maxMessages": 100,
+                        "pollInterval": 30,
+                        "readMessageIds": [
+                        ],
+                        "serverUrl": "https://ntfy.sh",
+                        "topics": ""
+                    },
                     "id": "plugin:ntfy-notifications"
                 },
                 {
@@ -230,6 +421,15 @@
                     ]
                 },
                 {
+                    "defaultSettings": {
+                        "autoMount": false,
+                        "fileBrowser": "yazi",
+                        "hideWhenEmpty": false,
+                        "iconColor": "none",
+                        "showBadge": false,
+                        "showNotifications": true,
+                        "terminalCommand": "kitty"
+                    },
                     "id": "plugin:usb-drive-manager"
                 },
                 {

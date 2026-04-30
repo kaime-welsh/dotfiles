@@ -54,6 +54,7 @@
         extraGroups = [
           "networkmanager"
           "wheel"
+          "input"
         ];
       };
 
@@ -89,6 +90,9 @@
       programs.xwayland.enable = true;
       services.upower.enable = true;
       services.flatpak.enable = true;
+
+      services.openssh.enable = true;
+      services.openssh.openFirewall = true;
 
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
