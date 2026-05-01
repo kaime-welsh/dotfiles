@@ -114,6 +114,7 @@
 
       services.openssh.enable = true;
       services.openssh.openFirewall = true;
+      services.tailscale.enable = true;
 
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
