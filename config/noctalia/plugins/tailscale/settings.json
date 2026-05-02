@@ -1,8 +1,8 @@
 {
   "refreshInterval": 5000,
-  "compactMode": false,
-  "showIpAddress": true,
-  "showPeerCount": true,
+  "compactMode": true,
+  "showIpAddress": false,
+  "showPeerCount": false,
   "hideDisconnected": false,
   "hideMullvadExitNodes": true,
   "terminalCommand": "kitty",

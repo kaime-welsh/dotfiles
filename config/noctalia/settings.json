@@ -382,22 +382,6 @@
                     "id": "plugin:niri-animation-picker"
                 },
                 {
-                    "defaultSettings": {
-                        "authMethod": "none",
-                        "authPassword": "",
-                        "authToken": "",
-                        "authUsername": "",
-                        "enableToasts": true,
-                        "maxMessages": 100,
-                        "pollInterval": 30,
-                        "readMessageIds": [
-                        ],
-                        "serverUrl": "https://ntfy.sh",
-                        "topics": ""
-                    },
-                    "id": "plugin:ntfy-notifications"
-                },
-                {
                     "blacklist": [
                     ],
                     "chevronColor": "none",

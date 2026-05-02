@@ -1,6 +1,6 @@
 { self, inputs, ... }:
 {
-  flake.nixosModules.voyagerConfiguration =
+  flake.nixosModules.citadelConfiguration =
     {
       pkgs,
       lib,
@@ -9,26 +9,17 @@
     }:
     {
       imports = [
-        self.nixosModules.voyagerHardware
-        self.nixosModules.niri
-        self.nixosModules.gaming
-        self.nixosModules.zen-browser
+        self.nixosModules.citadelHardware
       ];
 
       boot.loader.systemd-boot.enable = true;
       boot.loader.efi.canTouchEfiVariables = true;
 
-      networking.hostName = "voyager";
+      networking.hostName = "citadel";
       networking.networkmanager.enable = true;
+      networking.wireless.enable = false;
 
       time.timeZone = "America/Los_Angeles";
-
-      services.xserver = {
-        enable = true;
-        autoRepeatDelay = 200;
-        autoRepeatInterval = 35;
-        videoDrivers = [ "nvidia" ];
-      };
 
       services.displayManager.ly = {
         enable = true;
@@ -38,34 +29,13 @@
         };
       };
 
-      services.pipewire = {
-        enable = true;
-        alsa.enable = true;
-        alsa.support32Bit = true;
-        pulse.enable = true;
-      };
-
-      hardware.bluetooth = {
-        enable = true;
-        powerOnBoot = true;
-      };
-
-      hardware.graphics.enable = true;
-      hardware.nvidia = {
-        modesetting.enable = true;
-        powerManagement.enable = false;
-        powerManagement.finegrained = false;
-        open = true;
-        nvidiaSettings = true;
-      };
-
       users.users.sysop = {
         isNormalUser = true;
         description = "SYSOP";
         extraGroups = [
           "networkmanager"
           "wheel"
-          "input"
+          "docker"
         ];
       };
 
@@ -88,10 +58,6 @@
         nixpkgs-fmt
 
         cachix
-        nheko
-        fluffychat
-        dino
-        gajim
       ];
 
       nix.settings = {
@@ -107,22 +73,16 @@
         ];
       };
 
-      environment.pathsToLink = [
-        "/share/applications"
-        "/share/xdg-desktop-portal"
-      ];
-
-      programs.xwayland.enable = true;
-      services.upower.enable = true;
-      services.flatpak.enable = true;
-
+      virtualisation.docker = {
+        enable = true;
+        rootless = {
+          enable = true;
+          setSocketVariable = true;
+        }:
+      };
       services.openssh.enable = true;
       services.openssh.openFirewall = true;
       services.tailscale.enable = true;
-
-      fonts.packages = with pkgs; [
-        nerd-fonts.jetbrains-mono
-      ];
 
       system.stateVersion = "25.11";
     };

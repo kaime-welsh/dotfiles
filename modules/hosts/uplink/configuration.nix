@@ -78,6 +78,10 @@
         nixpkgs-fmt
 
         cachix
+        nheko
+        fluffychat
+        dino
+        gajim
       ];
 
       nix.settings = {
