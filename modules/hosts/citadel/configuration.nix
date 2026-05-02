@@ -17,7 +17,6 @@
 
       networking.hostName = "citadel";
       networking.networkmanager.enable = true;
-      networking.wireless.enable = false;
 
       time.timeZone = "America/Los_Angeles";
 
