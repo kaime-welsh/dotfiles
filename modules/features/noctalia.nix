@@ -6,8 +6,8 @@
       # programs needed for various plugins
       home.packages = with pkgs; [
         evtest
-        yt-dlp
-        mpv
+        # yt-dlp
+        # mpv
       ];
 
       xdg.configFile."noctalia".source =

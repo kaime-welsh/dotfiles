@@ -10,6 +10,7 @@
     {
       imports = [
         self.nixosModules.citadelHardware
+        self.nixosModules.matrix
       ];
 
       boot.loader.systemd-boot.enable = true;
@@ -79,6 +80,7 @@
           setSocketVariable = true;
         };
       };
+
       services.openssh.enable = true;
       services.openssh.openFirewall = true;
       services.tailscale.enable = true;
