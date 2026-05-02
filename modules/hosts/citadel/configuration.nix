@@ -78,7 +78,7 @@
         rootless = {
           enable = true;
           setSocketVariable = true;
-        }:
+        };
       };
       services.openssh.enable = true;
       services.openssh.openFirewall = true;
