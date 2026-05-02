@@ -1,7 +1,6 @@
 { self, inputs, ... }:
 {
   flake.nixosModules.citadelHardware =
-    { ... }:
     {
       config,
       lib,
@@ -9,7 +8,6 @@
       modulesPath,
       ...
     }:
-
     {
       imports = [
         (modulesPath + "/installer/scan/not-detected.nix")
