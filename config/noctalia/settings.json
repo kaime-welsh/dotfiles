@@ -903,19 +903,11 @@
         "activeTemplates": [
             {
                 "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
                 "id": "helix"
             },
             {
                 "enabled": true,
                 "id": "kitty"
-            },
-            {
-                "enabled": true,
-                "id": "niri"
             },
             {
                 "enabled": true,
@@ -927,15 +919,23 @@
             },
             {
                 "enabled": true,
-                "id": "qt"
-            },
-            {
-                "enabled": true,
                 "id": "zenBrowser"
             },
             {
                 "enabled": true,
                 "id": "steam"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
+            },
+            {
+                "enabled": true,
+                "id": "qt"
+            },
+            {
+                "enabled": true,
+                "id": "niri"
             }
         ],
         "enableUserTheming": false
