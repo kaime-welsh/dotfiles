@@ -20,6 +20,7 @@
         wl-clipboard
         nixpkgs-fmt
         nil
+        direnv
       ];
 
       programs.bash = {
