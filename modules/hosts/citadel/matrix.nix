@@ -15,33 +15,20 @@
             allow_federation = true;
             registration_token = "WelcomeToTheToadstool!";
 
-            # registration_terms = {}; # TODO: Need to make policy page
-            # TODO: Build a better list?
+            address = [ "0.0.0.0" ];
+            
             trusted_servers = [
               "matrix.org"
+              "unredacted.org"
+              "mozilla.org"
               "nixos.org"
+              "continuwuity.org"
+              "federated.nexus"
             ];
-
-            turn_allow_guest = true;
-            turn_uris = [
-              "turn:toadstool.online?transport=udp"
-              "turn:toadstool.online?transport=tcp"
-              "turns:toadstool.online?transport=udp"
-              "turns:toadstool.online?transport=tcp"
-            ];
-            turn_secret = "QXOt8YIy9MG7W8BKgJThtUsgwpKg4xr13HxQZm5tlUgxsjM2wePEv5AydOcwdRN9";
-            turn_ttl = 86400;
 
             well_known.client = "https://toadstool.online";
             well_known.server = "toadstool.online:443";
             support_mxid = "@wibblyfrog:toadstool.online";
-
-            matrix.rtc.foci = [
-              {
-                type = "livekit";
-                livekit_service_url = "https://livekit.toadstool.online";
-              }
-            ];
 
             # TODO: Setup Meowlnir
             # antispam.meowlnix = {

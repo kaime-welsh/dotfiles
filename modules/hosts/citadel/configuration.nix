@@ -10,7 +10,8 @@
     {
       imports = [
         self.nixosModules.citadelHardware
-        self.nixosModules.matrix
+        # self.nixosModules.matrix
+        self.nixosModules.trilium
       ];
 
       boot.loader.systemd-boot.enable = true;
