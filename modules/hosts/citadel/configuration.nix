@@ -10,6 +10,7 @@
     {
       imports = [
         self.nixosModules.citadelHardware
+        self.nixosModules.vintageserver
         # self.nixosModules.matrix
         # self.nixosModules.trilium
       ];
@@ -72,14 +73,6 @@
         trusted-public-keys = [
           "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
         ];
-      };
-
-      virtualisation.docker = {
-        enable = true;
-        rootless = {
-          enable = true;
-          setSocketVariable = true;
-        };
       };
 
       services.openssh.enable = true;

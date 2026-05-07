@@ -30,16 +30,14 @@
             well_known.server = "toadstool.online:443";
             support_mxid = "@wibblyfrog:toadstool.online";
 
-            # TODO: Setup Meowlnir
-            # antispam.meowlnix = {
-            #   base_url = "http://127.0.0.1:29339";
-            #   secret = "";
-            #   management_room = "";
-            #   check_all_joins = true;
-            # };
+            matrix_rtc.foci = [
+              {
+                type = "livekit";
+                livekit_service_url = "https://livekit.toadstool.online";
+              }
+            ];
           };
         };
-
       };
       networking.firewall.allowedTCPPorts = [ 6167 ];
     };
