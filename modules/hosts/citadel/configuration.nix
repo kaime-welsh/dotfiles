@@ -11,8 +11,6 @@
       imports = [
         self.nixosModules.citadelHardware
         self.nixosModules.vintageserver
-        self.nixosModules.livekit
-        self.nixosModules.matrix
         # self.nixosModules.trilium
       ];
 
