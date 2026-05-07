@@ -18,10 +18,12 @@
         "ignoreMouseInput": false,
         "overviewLayer": true,
         "pinnedApps": [
-            "zen",
             "steam",
-            "kitty",
-            "io.gitlab.librewolf-community.librewolf-community-wah-4wCtucbq"
+            "io.gitlab.librewolf-community.librewolf-community-wah-4wCtucbq",
+            "FFPWA-01KQR374TEN30V7941TCKAV3N6",
+            "FFPWA-01KQV2RNZQ7Q94QVGGDDD3XQAP",
+            "FFPWA-01KQTD2MQ5YE82MRHNVRXP02Y9",
+            "FFPWA-01KQTC85HBK7JDEGPR6NQEJG12"
         ],
         "position": "top_left",
         "screenshotAnnotationTool": "",
@@ -295,34 +297,6 @@
             "right": [
                 {
                     "defaultSettings": {
-                        "completedCount": 0,
-                        "count": 0,
-                        "current_page_id": 0,
-                        "exportEmptySections": false,
-                        "exportFormat": "markdown",
-                        "exportPath": "~/Documents",
-                        "isExpanded": false,
-                        "pages": [
-                            {
-                                "id": 0,
-                                "name": "General"
-                            }
-                        ],
-                        "priorityColors": {
-                            "high": "#f44336",
-                            "low": "#9e9e9e",
-                            "medium": "#2196f3"
-                        },
-                        "showBackground": true,
-                        "showCompleted": true,
-                        "todos": [
-                        ],
-                        "useCustomColors": false
-                    },
-                    "id": "plugin:todo"
-                },
-                {
-                    "defaultSettings": {
                         "autoPaste": false,
                         "autoPasteDelay": 300,
                         "autoPasteOnRightClick": false,
@@ -340,38 +314,6 @@
                         "showCloseButton": true
                     },
                     "id": "plugin:clipper"
-                },
-                {
-                    "defaultSettings": {
-                        "animation_duration": 750,
-                        "background_color": null,
-                        "background_opacity": null,
-                        "card_height": 500,
-                        "card_radius": 10,
-                        "card_spacing": 8,
-                        "card_strip_width": 80,
-                        "cards_shown": 11,
-                        "filter_images": [
-                            "png",
-                            "jpg",
-                            "jpeg"
-                        ],
-                        "filter_videos": [
-                            "mp4",
-                            "mkv",
-                            "avi",
-                            "mov"
-                        ],
-                        "live_preview": false,
-                        "selected_filter": "images",
-                        "shear_factor": -0.25,
-                        "show_image_name": true,
-                        "show_image_type": true,
-                        "show_top_bar": true,
-                        "top_bar_height": 35,
-                        "top_bar_radius": 10
-                    },
-                    "id": "plugin:wallcards"
                 },
                 {
                     "defaultSettings": {
@@ -724,7 +666,7 @@
         "firstDayOfWeek": -1,
         "hideWeatherCityName": false,
         "hideWeatherTimezone": false,
-        "name": "Ontario",
+        "name": "Riverside",
         "showCalendarEvents": true,
         "showCalendarWeather": true,
         "showWeekNumberInCalendar": true,
@@ -737,7 +679,7 @@
     "network": {
         "bluetoothAutoConnect": true,
         "bluetoothDetailsViewMode": "grid",
-        "bluetoothHideUnnamedDevices": false,
+        "bluetoothHideUnnamedDevices": true,
         "bluetoothRssiPollIntervalMs": 60000,
         "bluetoothRssiPollingEnabled": false,
         "disableDiscoverability": false,
@@ -927,15 +869,15 @@
             },
             {
                 "enabled": true,
-                "id": "gtk"
-            },
-            {
-                "enabled": true,
                 "id": "qt"
             },
             {
                 "enabled": true,
                 "id": "niri"
+            },
+            {
+                "enabled": true,
+                "id": "gtk"
             }
         ],
         "enableUserTheming": false

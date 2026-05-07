@@ -16,7 +16,6 @@
 					self.homeModules.zellij
 					self.homeModules.yazi
 					self.homeModules.helix
-					self.homeModules.librewolf
 					self.homeModules.niri
 					self.homeModules.kitty
 					self.homeModules.noctalia

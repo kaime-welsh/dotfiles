@@ -5,6 +5,7 @@
     {
       home.sessionVariables = {
         EDITOR = "hx";
+        # ZELLIJ_AUTO_ATTACH = "true";
         ZELLIJ_AUTO_EXIT = "true";
       };
 
@@ -44,6 +45,7 @@
             fi
           fi
           fastfetch
+          eval "$(direnv hook bash)"
         '';
       };
     };

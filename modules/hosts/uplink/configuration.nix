@@ -12,7 +12,6 @@
         self.nixosModules.uplinkHardware
         self.nixosModules.niri
         self.nixosModules.gaming
-        self.nixosModules.zen-browser
       ];
 
       boot.loader.systemd-boot.enable = true;
@@ -78,7 +77,14 @@
         nixpkgs-fmt
 
         cachix
+        firefoxpwa
       ];
+
+      programs.firefox = {
+        enable = true;
+        package = pkgs.firefox;
+        nativeMessagingHosts.packages = [ pkgs.firefoxpwa ];
+      };
 
       nix.settings = {
         experimental-features = [

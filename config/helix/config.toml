@@ -30,8 +30,8 @@ D = "delete_char_backward"
 "]" = { b = ":bn" }
 H = ":bp"
 L = ":bn"
-"C-S-B" = ":sh just build"
-"C-S-R" = ":sh just run"
+F6 = ":sh just build"
+F5 = ":sh just run"
 
 [keys.normal.space]
 q = ":wbc"

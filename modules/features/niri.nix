@@ -10,11 +10,13 @@
         pkgs.noctalia-shell
         pkgs.fuzzel
         pkgs.xwayland-satellite
+        pkgs.adw-gtk3
       ];
 
       programs.niri.enable = true;
       programs.xwayland.enable = true;
       services.gnome.gnome-keyring.enable = true;
+
     };
 
   flake.homeModules.niri =
