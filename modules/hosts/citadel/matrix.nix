@@ -33,7 +33,7 @@
             matrix_rtc.foci = [
               {
                 type = "livekit";
-                livekit_service_url = "https://livekit.toadstool.online";
+                livekit_service_url = "https://toadstool.online/livekit/jwt";
               }
             ];
           };
