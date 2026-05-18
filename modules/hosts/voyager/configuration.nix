@@ -17,6 +17,8 @@
       boot.loader.systemd-boot.enable = true;
       boot.loader.efi.canTouchEfiVariables = true;
 
+      hardware.i2c.enable = true;
+
       networking.hostName = "voyager";
       networking.networkmanager.enable = true;
 
@@ -28,6 +30,7 @@
         autoRepeatInterval = 35;
         videoDrivers = [ "nvidia" ];
       };
+      services.desktopManager.gnome.enable = true;
 
       services.displayManager.ly = {
         enable = true;
@@ -52,11 +55,12 @@
       hardware.graphics.enable = true;
       hardware.nvidia = {
         modesetting.enable = true;
-        powerManagement.enable = false;
+        powerManagement.enable = true;
         powerManagement.finegrained = false;
         open = true;
         nvidiaSettings = true;
       };
+      hardware.uinput.enable = true;
 
       users.users.sysop = {
         isNormalUser = true;
@@ -65,6 +69,7 @@
           "networkmanager"
           "wheel"
           "input"
+          "uinput"
         ];
       };
 
@@ -88,6 +93,8 @@
 
         cachix
         firefoxpwa
+        ddcutil
+        openrgb-with-all-plugins
       ];
 
       programs.firefox = {
@@ -114,6 +121,7 @@
         "/share/xdg-desktop-portal"
       ];
 
+      services.hardware.openrgb.enable = true;
       programs.xwayland.enable = true;
       services.upower.enable = true;
       services.flatpak.enable = true;
@@ -121,10 +129,19 @@
       services.openssh.enable = true;
       services.openssh.openFirewall = true;
       services.tailscale.enable = true;
+      services.sunshine = {
+        enable = true;
+        autoStart = true;
+        capSysAdmin = true;
+        openFirewall = true;
+      };
 
       fonts.packages = with pkgs; [
         nerd-fonts.jetbrains-mono
       ];
+
+      networking.firewall.allowedTCPPorts = [ 2001 ];
+      networking.firewall.allowedUDPPorts = [ 2001 ];
 
       system.stateVersion = "25.11";
     };
